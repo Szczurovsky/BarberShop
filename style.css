@@ -1,0 +1,56 @@
+body{
+    box-sizing: border-box;
+    padding: 0px;
+    margin:0px;
+    font-family: roboto,sans-serif;
+    color:white;
+}
+section.firstView{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    height:100vh;
+
+    background-image: url("tlo.jpg");
+    background-repeat: no-repeat;
+    background-position-y: -150px;
+    background-size: cover;
+
+}
+nav{
+    position:fixed;
+    width:100%;
+}
+ul{
+    display:flex;
+    justify-content: flex-end;
+    margin-right:8%;
+    list-style-type: none;
+
+}
+li{ 
+    margin: 0 50px;
+}
+a{
+    font-size: 35px;
+    color:white;
+    text-decoration-line: none;
+    letter-spacing: 4px;
+
+}
+
+.hello{
+    margin:0;
+}
+a:hover{
+    color:red;
+}
+.zapychacz{
+    height:100vh;
+    background-color: rgb(53, 53, 53);
+}
+.hellos{
+    text-align: center;
+    flex-direction: column;
+}
