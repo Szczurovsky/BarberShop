@@ -25,21 +25,32 @@ nav{
 ul{
     display:flex;
     justify-content: flex-end;
-    margin-right:8%;
+    margin-right:2%;
     list-style-type: none;
-
+    padding-top:40px;
 }
 li{ 
-    margin: 0 50px;
+    padding: 0 35px;
+    border-right: white solid 1px;
+}
+li:last-child{
+    border:none;
 }
 a{
-    font-size: 35px;
+    font-size: 25px;
     color:white;
     text-decoration-line: none;
     letter-spacing: 4px;
 
 }
-
+.logo img{
+    position:fixed;
+    width:170px;
+    height: 120px;
+    padding-left:50px;
+    padding-top:20px;
+    filter:invert(100%);
+}
 .hello{
     margin:0;
 }
