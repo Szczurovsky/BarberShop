@@ -1,67 +1,126 @@
-body{
-    box-sizing: border-box;
-    padding: 0px;
-    margin:0px;
-    font-family: roboto,sans-serif;
-    color:white;
+body {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: roboto, sans-serif;
+  color: white;
 }
-section.firstView{
-    display:flex;
-    align-items: center;
+section.firstView {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  height: 100vh;
+  background-image: url("tlo.jpg");
+  background-repeat: no-repeat;
+  background-position-y: -150px;
+  background-size: cover;
+}
+nav.navPC {
+  position: fixed;
+  width: 100%;
+}
+.navPC ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2%;
+  list-style-type: none;
+  padding-top: 40px;
+}
+.navPC li {
+  padding: 0 35px;
+  border-right: white solid 1px;
+}
+li:last-child {
+  border: none;
+}
+a {
+  font-size: 25px;
+  color: white;
+  text-decoration-line: none;
+  letter-spacing: 4px;
+}
+
+.logo img {
+  position: fixed;
+  width: 170px;
+  height: 120px;
+  padding-left: 50px;
+  padding-top: 20px;
+  filter: invert(100%);
+}
+.hello {
+  margin: 0;
+}
+a:hover {
+  color: red;
+}
+.zapychacz {
+  height: 100vh;
+  background-color: rgb(53, 53, 53);
+}
+.hellos {
+  text-align: center;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+
+  .navPC {
+    display: none;
+  }
+  .logo {
+    display: flex;
     justify-content: center;
-    font-size: 25px;
-    height:100vh;
-
-    background-image: url("tlo.jpg");
-    background-repeat: no-repeat;
-    background-position-y: -150px;
-    background-size: cover;
-
-}
-nav{
-    position:fixed;
-    width:100%;
-}
-ul{
-    display:flex;
-    justify-content: flex-end;
-    margin-right:2%;
-    list-style-type: none;
-    padding-top:40px;
-}
-li{ 
-    padding: 0 35px;
-    border-right: white solid 1px;
-}
-li:last-child{
-    border:none;
-}
-a{
-    font-size: 25px;
-    color:white;
-    text-decoration-line: none;
-    letter-spacing: 4px;
-
-}
-.logo img{
-    position:fixed;
-    width:170px;
-    height: 120px;
-    padding-left:50px;
-    padding-top:20px;
-    filter:invert(100%);
-}
-.hello{
-    margin:0;
-}
-a:hover{
-    color:red;
-}
-.zapychacz{
-    height:100vh;
-    background-color: rgb(53, 53, 53);
-}
-.hellos{
+    position: fixed;
+    width: 100vw;
+    height: 200px;
+    background-color: transparent;
+  }
+  .logo img {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  .hamburger {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    background-color: pink;
+  }
+  .mobileNav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(116, 6, 6, 0.438);
+    display: flex;
     text-align: center;
+    justify-content: center;
+  }
+  .mobileNav ul {
+    position: relative;
     flex-direction: column;
+
+    margin:0;
+    right:0;
+    list-style-type: none;
+    padding-left:0;
+  }
+  .class0 {
+    padding: none;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  a {
+    font-size: 20px;
+    text-decoration-line: none;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+  }
+
 }
