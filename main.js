@@ -2,6 +2,7 @@ const hamburger = document.querySelector(".hamburger");
 const nav = document.createElement("nav");
 nav.classList.add("mobileNav");
 let ul = document.createElement("ul");
+const hider = document.querySelector(".hider")
 const navOptions = [
   "Strona główna",
   "galeria",
@@ -30,4 +31,12 @@ nav.style.visibility = "hidden";
 hamburger.addEventListener("click", showMenu);
 function showMenu() {
   nav.style.visibility = "visible";
+ 
 }
+function hideMenu() {
+  if (nav.style.visibility === "visible") {
+    nav.style.visibility = "hidden";
+    // console.log("sssss")
+  }
+}
+hider.addEventListener("click",hideMenu);
