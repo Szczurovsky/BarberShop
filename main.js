@@ -1,8 +1,8 @@
 const hamburger = document.querySelector(".hamburger");
-const nav = document.createElement("nav");
+const nav = document.querySelector(".mobileNav");
 nav.classList.add("mobileNav");
 let ul = document.createElement("ul");
-const hider = document.querySelector(".hider")
+const hider = document.querySelector(".hider");
 const navOptions = [
   "Strona główna",
   "galeria",
@@ -14,24 +14,12 @@ const body = document.querySelector("body");
 const propertyNav = document.querySelector("nav");
 if (window.innerWidth <= 768) {
   body.appendChild(hamburger);
-  body.appendChild(nav);
-  nav.appendChild(ul);
-  for (let i = 0; i < 5; i++) {
-    const li = document.createElement("li");
-    const a = document.createElement("a");
-    const navOption = navOptions[i];
-    li.classList.add("class" + i);
-    a.href = "www.wp.pl";
-    ul.appendChild(li);
-    li.appendChild(a);
-    a.textContent = navOption;
-  }
 }
 nav.style.visibility = "hidden";
 hamburger.addEventListener("click", showMenu);
 function showMenu() {
   nav.style.visibility = "visible";
- 
+  nav.style.width = "80%";
 }
 function hideMenu() {
   if (nav.style.visibility === "visible") {
@@ -39,4 +27,4 @@ function hideMenu() {
     // console.log("sssss")
   }
 }
-hider.addEventListener("click",hideMenu);
+hider.addEventListener("click", hideMenu);

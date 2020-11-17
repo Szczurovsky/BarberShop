@@ -73,6 +73,10 @@ a:hover {
 .hamburger{
   visibility:hidden;
 }
+.mobileNav{
+  visibility:hidden;
+  display:none;
+}
 @media (max-width: 768px) {
   .navPC {
     display: none;
@@ -110,6 +114,7 @@ a:hover {
     border-radius:20px;
   }
   .mobileNav {
+    background-position-x:0% ;
     position: fixed;
     top: 0;
     right: 0;
@@ -120,6 +125,8 @@ a:hover {
     text-align: center;
     align-items: center;
     justify-content: center;
+    animation-name:example;
+    animation-duration: 3s;
   }
   .mobileNav ul {
     position: relative;
@@ -127,15 +134,15 @@ a:hover {
     margin: 0;
     right: 0;
     list-style-type: none;
-    padding-left: 0;
-
+    padding:0 20%;
+    border-right:1px solid black;
+    border-left:1px solid black;
+    animation-timing-function: linear;
   }
-  ul li{
-
-  }
-  /* ul li:nth-child(1){
-    padding-top:100%;
-  } */
+@keyframes example{
+  from{width:0;}
+  to{width:80%;}
+}
   a {
     display:block;
     font-size: 20px;
@@ -143,8 +150,9 @@ a:hover {
     letter-spacing: 1px;
     text-transform: capitalize;
     color:black;
-    padding:20% 0;
+    padding:20% 0%;
     border-bottom:1px solid black;
+    
   }
   li:last-child a{
     border: none;
