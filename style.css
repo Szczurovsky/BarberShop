@@ -57,18 +57,20 @@ a:hover {
 }
 .zapychacz {
   height: 100vh;
-  background-color: rgb(53, 53, 53);
+  background-color: black;
 }
 .hellos {
   text-align: center;
   flex-direction: column;
 }
-
+.hamburger{
+  visibility:hidden;
+}
 @media (max-width: 768px) {
-
   .navPC {
     display: none;
   }
+
   .logo {
     display: flex;
     justify-content: center;
@@ -83,12 +85,22 @@ a:hover {
     margin: 0;
   }
   .hamburger {
+    display:flex;
     position: fixed;
     top: 0;
     left: 0;
     height: 50px;
     width: 50px;
-    background-color: pink;
+    visibility: visible;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .hamburger div{
+    width:70%;
+    margin:3px;
+    border: 4px solid white;
+    border-radius:20px;
   }
   .mobileNav {
     position: fixed;
@@ -104,11 +116,10 @@ a:hover {
   .mobileNav ul {
     position: relative;
     flex-direction: column;
-
-    margin:0;
-    right:0;
+    margin: 0;
+    right: 0;
     list-style-type: none;
-    padding-left:0;
+    padding-left: 0;
   }
   .class0 {
     padding: none;
@@ -122,5 +133,12 @@ a:hover {
     letter-spacing: 1px;
     text-transform: capitalize;
   }
-
+  section.firstView{
+    background-position-y: 120px;
+    background-position-x: 0px;
+    background-image: url("tlo1.jpg");
+    background-color:black;
+    background-size: contain;
+    font-size: 1.2rem;
+  }
 }
