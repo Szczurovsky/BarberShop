@@ -161,6 +161,7 @@ a:hover {
     border: none;
   }
   section.firstView{
+    height:91vh;
     background-position-y: 120px;
     background-position-x: 0px;
     background-image: url("tlo2.jpg");
@@ -197,6 +198,7 @@ a:hover {
 
 .opinions {
   height: 100vh;
+  /* background-color: #fff; */
 }
 .opinion{
   height:30%;
