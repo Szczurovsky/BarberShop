@@ -8,6 +8,9 @@ body {
   font-family: roboto, sans-serif;
   color: white;
 }
+
+/* Header */
+
 section.firstView {
   display: flex;
   align-items: center;
@@ -42,6 +45,7 @@ a {
   color: white;
   text-decoration-line: none;
   letter-spacing: 4px;
+  text-transform: capitalize;
 }
 
 .logo img {
@@ -58,10 +62,7 @@ a {
 a:hover {
   color: red;
 }
-.zapychacz {
-  height: 100vh;
-  background-color: black;
-}
+
 .hellos {
   text-align: center;
   flex-direction: column;
@@ -77,6 +78,8 @@ a:hover {
   visibility:hidden;
   display:none;
 }
+
+
 @media (max-width: 768px) {
   .navPC {
     display: none;
@@ -186,4 +189,73 @@ a:hover {
     justify-content: center;
     padding-top:20%;
   }
+}
+
+/* ////////////////////////////////////////// */
+                  /* Opinie */
+/* ////////////////////////////////////////// */
+
+.opinions {
+  height: 100vh;
+}
+.opinion{
+  height:30%;
+  /* background-color: rgba(255, 255, 255, 0.171); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.opinion p{
+  font-size: 3rem;
+}
+.notes{
+display:grid;
+grid-template-columns: auto auto auto;
+grid-template-rows:auto auto auto;
+grid-gap:2px;
+}
+.note{
+  display:flex;
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 15px;
+  visibility: hidden;
+}
+.note:nth-child(1){
+  grid-column-start: 1;
+  grid-column-end:4;
+  grid-row-start:1;
+  grid-row-end:4;
+  visibility: visible;
+}
+.note:nth-child(2){
+  grid-column-start: 5;
+  grid-column-end:8;
+  grid-row-start:1;
+  grid-row-end:4;
+  visibility: visible;
+}
+.note:nth-child(3){
+  grid-column-start: 3;
+  grid-column-end:6;
+  grid-row-start:6;
+  grid-row-end:9;
+  visibility: visible;
+}
+.note:nth-child(4){
+  grid-column-start: 1;
+  grid-column-end:4;
+  grid-row-start:11;
+  grid-row-end:13;
+  visibility: visible;
+}
+.note:nth-child(5){
+  grid-column-start: 5;
+  grid-column-end:8;
+  grid-row-start:11;
+  grid-row-end:13;
+  visibility: visible;
 }

@@ -19,7 +19,6 @@ nav.style.visibility = "hidden";
 hamburger.addEventListener("click", showMenu);
 function showMenu() {
   nav.style.visibility = "visible";
-  nav.style.width = "80%";
 }
 function hideMenu() {
   if (nav.style.visibility === "visible") {
