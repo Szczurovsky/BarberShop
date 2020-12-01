@@ -16,7 +16,7 @@ if (window.innerWidth <= 768) {
   body.appendChild(hamburger);
 }
 nav.style.visibility = "hidden";
-hamburger.addEventListener("click", showMenu);
+hamburger.addEventListener("touchend", showMenu);
 function showMenu() {
   nav.style.visibility = "visible";
 }
@@ -26,4 +26,17 @@ function hideMenu() {
     // console.log("sssss")
   }
 }
-hider.addEventListener("click", hideMenu);
+hider.addEventListener("touchend", hideMenu);
+document.addEventListener("touchmove",()=>{
+const logo = document.querySelector(".logo");
+logo.style.visibility="hidden";
+})
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+// We listen to the resize event
+window.addEventListener('resize', () => {
+  // We execute the same script as before
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
