@@ -12,8 +12,9 @@ const navOptions = [
 ];
 const body = document.querySelector("body");
 const propertyNav = document.querySelector("nav");
-if (window.innerWidth <= 768) {
+if (window.innerWidth <= 823) {
   body.appendChild(hamburger);
+  console.log("duap")
 }
 nav.style.visibility = "hidden";
 hamburger.addEventListener("touchend", showMenu);
